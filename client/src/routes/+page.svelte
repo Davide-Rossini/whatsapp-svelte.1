@@ -75,7 +75,7 @@
       <h3>Online</h3>
     </div>
     <div class="end">
-      <img src={Endtoend} alt="endtoend" id="endtoend">
+      <img src={Endtoend} alt="endtoend" id="endtoend" unselectable="on">
     </div>
     <div class="list-wrapper">
       <ul bind:this={listRef}>
@@ -106,12 +106,7 @@
   </main>
 {:else}
   <div class="container" on:click={handleImageClick}>
-    <img src={Image} alt="barra" id="barra">
-  </div>
-{/if}
-{#if xClicked}
-  <div class="container" on:click={handleXClick}>
-    <img src={Background_chat} alt="sfondo" id="sfondo">
+    <img src={Image} alt="barra" id="barra" unselectable="on">
   </div>
 {/if}
 
@@ -123,6 +118,7 @@
 body,h1,h2,h3 {
   font-family: 'Helvetica Neue', 'Roboto', sans-serif;
 }
+
 
 body {
   background-color: white;
