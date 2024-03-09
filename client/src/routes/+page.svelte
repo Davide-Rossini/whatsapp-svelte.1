@@ -66,7 +66,7 @@
     </header>
   <main>
     <div class="informazioni">
-      <img src={Profilepicture} id="skerdi-img" alt="fotoprofilo" draggable="false" unselectable="on">
+      <img src={Profilepicture} id="fotoprofilo" alt="fotoprofilo" draggable="false" unselectable="on">
       <h2>Utente</h2>
       <img src={Call} alt="call" class="strumenti" id="call" draggable="false" unselectable="on">
       <img src={Videocall} alt="videocall" class="strumenti" id="videocall" draggable="false" unselectable="on">
@@ -127,36 +127,35 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra gli elementi in modo verticale */
+  align-items: center;
   width: 100%;
 }
 
 header {
-  width: 100%; /* Imposta la larghezza al 100% */
-  max-width: 560px; /* Imposta la larghezza massima per centrare l'header */
-  height: 50px; /* Riduci l'altezza se necessario */
+  width: 100%; 
+  max-width: 560px; 
+  height: 50px;
   display: flex;
   align-items: center;
   background-color: #075E54;
   color: white;
   padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra per un effetto rialzato */
-  border-radius: 20px 20px 0 0; /* Angoli arrotondati solo nella parte superiore */
-  margin: 5px auto 0px; /* Centra l'header orizzontalmente */
-  z-index: 1000; /* Assicurati che l'header sia sopra gli altri contenuti */
-  position: relative; /* Necessario per il z-index */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+  border-radius: 20px 20px 0 0;
+  margin: 5px auto 0px; 
+  z-index: 1000; 
+  position: relative; 
   animation: fadeIn 1s;
 }
 @keyframes fadeIn {
     from {
-      opacity: 0; /* Parti dall'opacità 0 */
+      opacity: 0;
     }
     to {
-      opacity: 1; /* Arriva all'opacità 1 */
+      opacity: 1;
     }
   }
 
-  /* Definisci l'animazione fadeOut */
   @keyframes fadeOut {
     from {
       opacity: 1;
@@ -169,12 +168,11 @@ main {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 60px);
-  max-width: 600px; /* Imposta la larghezza massima per centrare il contenuto */
-  border-radius: 0 0 20px 20px;/* Angoli arrotondati */
-  overflow: hidden; /* Nasconde gli overflow per mantenere i bordi arrotondati */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra per un effetto rialzato */
-  /* z-index: 1; */
-  margin: 0 auto 10px; /* Centra l'header orizzontalmente */
+  max-width: 600px;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+  margin: 0 auto 10px;
   animation: fadeIn 1s;
 
 }
@@ -229,7 +227,7 @@ main {
   margin-left: 80px;
 }
 
-#skerdi-img{
+#fotoprofilo{
   border-radius: 100px;
   height: 50px;
   margin-left: 15px;
@@ -256,16 +254,6 @@ h1{
 }
 
 
-/*   header {
-height: 60px;
-display: flex;
-align-items: center;
-background-color: #075E54;
-color: white;
-padding: 0 20px;
-pointer-events: none;
-user-select: none;
-} */
 
 
 .logo {
@@ -283,12 +271,6 @@ margin-left: 0px;
 }
 
 
-/* main {
-display: flex;
-flex-direction: column;
-height: calc(100vh - 60px);
-}
- */
 
 .list-wrapper {
 flex-grow: 1;
